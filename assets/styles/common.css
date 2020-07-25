@@ -174,10 +174,12 @@ body a {
 
 .footer .concat {
   padding: 45px 20px 40px 90px;
-  background-color: #033; }
+  background: #033 url("../images/index/footer-bg.png") no-repeat center center; }
   .footer .concat .grid-a {
     font-size: 32px;
     color: #fff; }
+  .footer .concat .grid-b {
+    padding-top: 25px; }
   .footer .concat .grid-b a {
     display: inline-block;
     width: 200px;
@@ -268,8 +270,10 @@ body a {
   flex: 1; }
 
 .content .grid-row .pic {
-  min-height: 400px;
-  background-color: #0f0; }
+  max-height: 400px;
+  border-radius: 4px;
+  background: url("../images/contract/a.png") no-repeat;
+  background-size: 100% 100%; }
 
 .content .grid-row .form-cont {
   padding: 0 50px; }

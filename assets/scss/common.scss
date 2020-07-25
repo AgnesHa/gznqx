@@ -219,10 +219,13 @@ body a {
   }
   .concat {
     padding: 45px 20px 40px 90px;
-    background-color: #033;
+    background: #033 url("../images/index/footer-bg.png") no-repeat center center;
     .grid-a {
       font-size: 32px;
       color: #fff;
+    }
+    .grid-b {
+      padding-top: 25px;
     }
     .grid-b a {
       display: inline-block;
@@ -349,8 +352,10 @@ body a {
       flex: 1;
     }
     .pic {
-      min-height: 400px;
-      background-color: #0f0;
+      max-height: 400px;
+      border-radius: 4px;
+      background: url('../images/contract/a.png') no-repeat;
+      background-size: 100% 100%;
     }
 
     .form-cont {
