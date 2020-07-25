@@ -1,0 +1,35 @@
+.content-about-us {
+  position: relative;
+  z-index: 1; }
+  .content-about-us .box .spacing {
+    height: 728px; }
+  .content-about-us .box .row {
+    overflow: hidden; }
+    .content-about-us .box .row .grid {
+      float: left; }
+      .content-about-us .box .row .grid img {
+        width: 200px;
+        height: 200px;
+        cursor: pointer; }
+
+@media (min-width: 768px) {
+  .content-about-us .box {
+    min-height: 433px;
+    background: #fff url("../images/about-us/bg-aboutus-1440px.png") no-repeat center 0; } }
+
+@media (min-width: 1024px) {
+  .content-about-us .box {
+    min-height: 577px;
+    background: #fff url("../images/about-us/bg-aboutus-1024px.png") no-repeat center 0; } }
+
+@media (min-width: 1200px) {
+  .content-about-us .box {
+    min-height: 676px;
+    background: #fff url("../images/about-us/bg-aboutus-1200px.png") no-repeat center 0; } }
+
+@media (min-width: 1400px) {
+  .content-about-us {
+    top: -145px; }
+    .content-about-us .box {
+      min-height: 833px;
+      background: #fff url("../images/about-us/bg-aboutus-1440px.png") no-repeat center 0; } }

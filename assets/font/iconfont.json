@@ -1,0 +1,65 @@
+{
+  "id": "1963661",
+  "name": "gznqx",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "621506",
+      "name": "google+",
+      "font_class": "555",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "621507",
+      "name": "facebook",
+      "font_class": "666",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "806163",
+      "name": "twitter",
+      "font_class": "icon",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "9358584",
+      "name": "arrow",
+      "font_class": "arrow",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "9358585",
+      "name": "arrow-up",
+      "font_class": "arrow-up",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "9358589",
+      "name": "arrow-down",
+      "font_class": "arrow-down",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "9358590",
+      "name": "arrow-left",
+      "font_class": "arrow-left",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "9358730",
+      "name": "play-circle",
+      "font_class": "play-circle",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    }
+  ]
+}
