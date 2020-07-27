@@ -2,7 +2,7 @@
 
 .mask-content {
   .box {
-    padding: 50px 30px;
+    padding: 200px 30px 50px;
   }
   .top {
     display: flex;
@@ -275,6 +275,7 @@
 // product-list-mask
 .content-product-list {
   .box {
+    padding-top: 200px;
     padding-left: 100px;
     padding-right: 100px;
     background: #fff url('../images/product-bg.png') repeat-y;
@@ -412,6 +413,11 @@
     .gcol-r {
       padding-left: 20px;
     }
+    .under .link {
+      a {
+        display: none;
+      }
+    }
     .hover .under {
       position: absolute;
       top: 0px;
@@ -429,6 +435,7 @@
         border-bottom-left-radius: 28px;
         background-color: #45ADFF;
         a {
+          display: inline;
           font-size: 18px;
           color: #fff;
         }

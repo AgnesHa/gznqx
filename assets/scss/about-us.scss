@@ -2,6 +2,7 @@
   position: relative;
   z-index: 1;
   .box {
+    padding: 0;
     .spacing {
       height: 728px;
     }
@@ -9,10 +10,28 @@
       overflow: hidden;
       .grid {
         float: left;
+        position: relative;
         img {
           width: 200px;
           height: 200px;
           cursor: pointer;
+        }
+        .btn-mask {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 10;
+          background-color: rgba(0, 0, 0, 0.6);
+          width: 100%;
+          height: 100%;
+          .btn-play {
+            position: relative;
+            text-align: center;
+          }
+          .btn-play img {
+            width: 40px;
+            height: 40px;
+          }
         }
       }
     }

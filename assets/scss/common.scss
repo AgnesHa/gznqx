@@ -76,6 +76,7 @@ body a {
           width: 0;
           height: 0;
           border: 5px solid transparent;
+          border-top-color: rgb(186,183,184);
         }
       }
       &.active {
@@ -203,11 +204,22 @@ body a {
       .map {
         margin-top: 10px;
         font-size: 14px;
-        color: rgba(136, 136, 136, 1);
-        img {
-          width: 14px;
-          height: 20px;
-          margin-right: 10px;
+        a {
+          color: rgba(136, 136, 136, 1);
+          .img {
+            display: inline-block;
+            width: 14px;
+            height: 20px;
+            margin-right: 10px;
+            background: url('../images/location.png') no-repeat;
+            vertical-align: top;
+          }
+          &:hover {
+            color: $main-color;
+            .img {
+              background: url('../images/location-blue.png') no-repeat;
+            }
+          }
         }
       }
     }
@@ -387,5 +399,54 @@ body a {
         color: #fff;
       }
     }
+  }
+}
+
+// video mask
+.video-mask-fake {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.3);
+}
+.video-mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 688px;
+  left: 50%;
+  margin-left: -338px;
+  .video-bg {
+    width: 688px;
+    height: 387px;
+    margin: 0 auto;
+  }
+}
+// image mask
+.img-mask-fake {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.3);
+}
+.img-mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 500px;
+  left: 50%;
+  margin-left: -250px;
+  .img-bg {
+    width: 500px;
+    height: 850px;
+    margin: 0 auto;
   }
 }

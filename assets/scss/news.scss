@@ -2,6 +2,7 @@
 
 .content-news {
   .box {
+    padding-top: 200px;
     background: #fff url('../images/product-bg.png') repeat-y;
   }
   .row {
@@ -73,6 +74,7 @@
 .content-news-detail {
   .box {
     position: relative;
+    padding-top: 200px;
     background: #fff url('../images/product-bg.png') repeat-y;
   }
   h2 {
@@ -80,6 +82,15 @@
     text-align: center;
     font-weight: bold;
     font-size: 33px;
+  }
+  .publish-date {
+    margin-bottom: 50px;
+    text-align: center;
+    span {
+      padding: 5px 20px;
+      background-color: #6BCBFF;
+      color: #fff;
+    }
   }
   .btn-group {
     width: 100%;
@@ -104,12 +115,12 @@
     .btn-prev {
       position: absolute;
       left: 56px;
-      top: 300px;
+      top: 400px;
     }
     .btn-next {
       position: absolute;
       right: 56px;
-      top: 300px;
+      top: 400px;
     }
   }
   .article-content {
