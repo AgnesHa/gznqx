@@ -9,6 +9,10 @@
   }
 
   // slide-top
+  var contentW = jQuery(".index-content .box").width()
+  var slideH = contentW / 1.8
+  jQuery(".index-content .box .slide-top .slideBox").css({'height': slideH + 'px'})
+  jQuery(".index-content .box .slide-top .slideBox .bd").css({'height': slideH + 'px'})
 	jQuery(".slideBox").slide({
 		mainCell: ".bd ul",
 		effect: "fold",
@@ -16,21 +20,7 @@
 		autoPlay: false,
 		mouseOverStop: true,
 		startFun:function(i,c){
-			
-		}
-  });
-  
-  // mask
-  var backdrop5 = new Backdrop($('.demo7 >.container'), {
-    transition: {
-        value: '.4s cubic-bezier(0, 0.55, 0.45, 1)',
-        waitForTransition: true,
-    },
-    autoplay: false,
-    offsetDistance: $('.demo7 .cards-list')[0].offsetWidth + 20,
-    navigation: {
-      nextEl: $('.serial .btn-next'),
-      prevEl: $('.serial .btn-prev')
+      jQuery(".index-content .box .slide-top .slideBox .bd ul").css({'height': slideH + 'px'})
     }
   });
   
@@ -53,19 +43,6 @@
       },
       baseZIndex: 100, // 默认为10
   });
-  // news
-  var backdrop5 = new Backdrop($('.demo5 >.container'), {
-    transition: {
-        value: '.4s cubic-bezier(0, 0.55, 0.45, 1)',
-        waitForTransition: true,
-    },
-    autoplay: false,
-    offsetDistance: $('.demo5 .cards-list')[0].offsetWidth + 20,
-    navigation: {
-        nextEl: $('.demo5 .btn-right'),
-        prevEl: $('.demo5 .btn-left')
-    }
-  });
 })();
 
 (function($){
@@ -78,7 +55,7 @@
   closeImg()
 
   $(".index-content .btn-play").on("click", function() {
-    playVideo('video2', "assets/videos/nqx-administration-center.mp4")
+    playVideo('video2', "vendor/nqx/videos/nqx-administration-center.mp4")
   })
 
   $(".video-mask-fake").on("click", function(){

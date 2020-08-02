@@ -1,10 +1,11 @@
 .content-news .box {
-  padding-top: 200px;
-  background: #fff url("../images/product-bg.png") repeat-y; }
+  padding: 200px 50px 0;
+  background: #fff url("https://gznqx.gitee.io/nqx/assets/images/product-bg.png") repeat-y; }
 
 .content-news .row {
   display: flex;
-  margin-bottom: 70px; }
+  padding-bottom: 70px;
+  background-color: #fff; }
   .content-news .row .grid {
     flex: 1; }
     .content-news .row .grid .item-img img {
@@ -37,11 +38,11 @@
         -webkit-line-clamp: 5;
         word-break: break-all; }
     .content-news .row .grid.grid-l {
-      padding-left: 100px; }
+      padding-left: 50px; }
       .content-news .row .grid.grid-l .item-img {
         text-align: left; }
     .content-news .row .grid.grid-r {
-      padding-right: 100px; }
+      padding-right: 50px; }
       .content-news .row .grid.grid-r .item-img {
         text-align: right; }
 
@@ -92,11 +93,11 @@
   .content-news-detail .btn-group .btn-prev {
     position: absolute;
     left: 56px;
-    top: 400px; }
+    top: 300px; }
   .content-news-detail .btn-group .btn-next {
     position: absolute;
     right: 56px;
-    top: 400px; }
+    top: 300px; }
 
 .content-news-detail .article-content {
   padding: 0 120px; }

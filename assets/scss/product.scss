@@ -2,42 +2,59 @@
 
 .mask-content {
   .box {
-    padding: 200px 30px 50px;
+    padding: 200px 30px 0;
+    background: #fff url('https://gznqx.gitee.io/nqx/assets/images/product-bg.png') repeat-y;
   }
   .top {
     display: flex;
     .l-part {
       flex: 1;
       .btn-group {
-        position: absolute;
-        bottom: 130px;
-        right: 20px;
-        z-index: 1000;
+        float: left;
+        clear: both;
+        width: 153px;
+        padding: 10px 0;
+        text-align: center;
       }
       .btn-prev,
       .btn-next {
+        display: inline-block;
         width: 30px;
         height: 30px;
-        background-color: #f00;
+        border: 1px solid #d2d2d2;
+        font-size: 20px;
+        cursor: pointer;
+        &:hover {
+          border-color: #ddd;
+        }
       }
       .btn-prev {
-        margin-bottom: 10px;
+        margin-right: 10px;
       }
       .pic-fold {
         float: left;
-        width: 173px;
-        padding: 0 20px;
+        &-list {
+          position: relative;
+          overflow: hidden;
+          width: 153px;
+          height: 439px;
+        }
+        ul {
+          margin: 0 10px;
+          transition: .7s margin;
+        }
         li {
           width: 133px;
           height: 133px;
           margin-bottom: 20px;
-          border: 1px solid #dcdcdc;
+          border: 1px solid rgba(220,220, 220, 0.5);
           border-radius: 4px;
+          text-align: center;
           &:last-child {
             margin-bottom: 0;
           }
           &.active {
-            outline: 2px solid $main-color;
+            box-shadow: 5px 5px 10px rgba(107, 203, 255, 0.3);
           }
         }
         img {
@@ -46,67 +63,28 @@
         }
       }
       .pic-glass {
-        float: left;
-        width: 450px;
-        height: 630px;
-        overflow: hidden;
         position: relative;
+        overflow: hidden;
+        float: left;
+        width: 439px;
+        height: 439px;
+        background-color: #fff;
         .img-item {
           position: absolute;
-          padding: 20px;
+          width: 100%;
           border-radius: 10px;
-          box-shadow: 5px 5px 20px rgba(107, 203, 255, 0.7);
           background-color: #fff;
+          text-align: center;
           img {
             width: 100%;
-            height: 100%;
-          }
-          &.item-1 {
-            z-index: 200;
-            width: 450px;
-            height: 512px;
-          }
-          &.item-2 {
-            top: 67px;
-            left: 20px;
-            z-index: 199;
-            width: 410px;
-            height: 463px;
-          }
-          &.item-3 {
-            top: 133px;
-            left: 40px;
-            z-index: 198;
-            width: 370px;
-            height: 418px;
-          }
-          &.item-4 {
-            top: 199px;
-            left: 60px;
-            z-index: 197;
-            width: 330px;
-            height: 372px;
-          }
-          &.item-5 {
-            top: 264px;
-            left: 80px;
-            z-index: 196;
-            width: 290px;
-            height: 327px;
-          }
-          &.item-6 {
-            top: 330px;
-            left: 100px;
-            z-index: 195;
-            width: 250px;
-            height: 282px;
+            max-width: 439px;
+            max-height: 439px;
           }
         }
       }
       .tag-btn {
         clear: both;
         width: 603px;
-        padding-top: 20px;
       }
       .tag {
         float: left;
@@ -158,26 +136,28 @@
         }
       }
       dd {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-indent: 26px;
-        font-weight: bold;
         font-size: 16px;
+        color: #343434;
       }
     }
   }
   .bottom {
-    padding-top: 50px;
+    margin-top: 50px;
+    background-color: #fff;
     .tabs {
       display: flex;
-      padding: 0 150px;
+      width: 50%;
       .tab-item {
         flex: 1;
         margin-right: 10px;
         padding: 10px 0;
         border: 1px solid #6BCBFF;
+        border-bottom-color: transparent;
         background-color: #fff;
         text-align: center;
-        font-size: 36px;
+        font-size: 18px;
         color: #45ADFF;
         cursor: pointer;
         &:last-child {
@@ -201,9 +181,6 @@
       }
       dd {
         color: #888;
-      }
-      img {
-        box-shadow: 5px 5px 20px $main-color;
       }
       .l-part {
         margin-top: 100px;
@@ -266,7 +243,6 @@
       }
     }
     .line {
-      margin-top: 10px;
       border-bottom: 1px solid $main-color;
     }
   }
@@ -275,13 +251,13 @@
 // product-list-mask
 .content-product-list {
   .box {
-    padding-top: 200px;
-    padding-left: 100px;
-    padding-right: 100px;
-    background: #fff url('../images/product-bg.png') repeat-y;
+    padding: 200px 50px 0;
+    background: #fff url('https://gznqx.gitee.io/nqx/assets/images/product-bg.png') repeat-y;
   }
   .grow {
     display: flex;
+    padding: 20px;
+    background-color: #fff;
   }
   .grid {
     flex: 1;
@@ -344,16 +320,15 @@
       }
     }
     .big-img {
-      width: 445px;
-      height: 580px;
+      max-width: 445px;
+      text-align: center;
       img {
-        width: 445px;
-        height: 580px;
+        max-width: 445px;
       }
     }
     .params {
       width: 445px;
-      margin-top: 40px;
+      margin-top: 20px;
       .p-box {
         width: 222px;
         padding-top: 20px;

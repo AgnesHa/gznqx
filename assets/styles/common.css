@@ -8,7 +8,7 @@
   height: 0; }
 
 body {
-  background-color: #f1f1f1; }
+  background-color: rgba(241, 241, 241, 0.5); }
 
 body a {
   transition: .3s all ease; }
@@ -25,26 +25,30 @@ body a {
   margin: 50px 0 0; }
   .header .box {
     margin: 0 auto;
-    padding: 0 50px; }
+    padding: 0 30px; }
     .header .box .wrap {
-      padding: 20px;
+      padding: 0 20px;
       background-color: #fff; }
   .header .logo {
-    float: left; }
+    float: left;
+    padding: 20px 0; }
     .header .logo img {
       width: 152px;
       height: 55px; }
   .header .nav {
     float: right;
-    padding: 15px 0; }
+    padding: 0; }
     .header .nav li {
       position: relative;
       float: left;
-      border-right: 1px solid #c1b2b1; }
+      padding: 36px 0; }
       .header .nav li:last-child {
         border-right: none; }
       .header .nav li .ent {
-        padding: 0 20px; }
+        display: inline-block;
+        height: 24px;
+        padding: 0 20px;
+        border-right: 1px solid #c1b2b1; }
         .header .nav li .ent.hoon .sj {
           display: inline-block;
           border: 5px solid transparent;
@@ -63,12 +67,24 @@ body a {
           height: 0;
           border: 5px solid transparent;
           border-top-color: #bab7b8; }
-      .header .nav li.active a {
-        font-weight: bold;
-        color: #6bcbff; }
+      .header .nav li.active {
+        background-color: #6bcbff; }
+        .header .nav li.active .link-group {
+          background-color: #6bcbff; }
+          .header .nav li.active .link-group .link-item {
+            border-bottom: 1px solid #fff; }
+            .header .nav li.active .link-group .link-item:last-child {
+              border-bottom: 0; }
+          .header .nav li.active .link-group a {
+            color: #fff; }
+        .header .nav li.active a.ent {
+          font-weight: bold;
+          color: #fff; }
+          .header .nav li.active a.ent .sj {
+            border-top-color: #fff; }
     .header .nav .link-group {
       position: absolute;
-      left: -59px;
+      left: 0;
       display: none;
       width: 200px;
       padding-top: 6px;
@@ -79,30 +95,29 @@ body a {
         border-bottom: 1px solid #dcdcdc;
         text-overflow: ellipsis;
         white-space: nowrap;
-        text-align: center; }
+        text-align: left; }
         .header .nav .link-group .link-item:last-child {
           border-bottom: 0; }
         .header .nav .link-group .link-item:hover {
           color: #fff; }
       .header .nav .link-group a {
         display: block;
-        padding: 5px 10px;
+        padding: 5px 20px;
         overflow: hidden;
         width: 200px;
         text-overflow: ellipsis;
         white-space: nowrap;
-        text-align: center; }
+        text-align: left; }
       .header .nav .link-group a:hover {
-        background-color: #6bcbff;
-        color: #fff; }
+        color: #6bcbff; }
     .header .nav .language a {
       position: relative;
       display: inline-block;
       margin: 0 20px;
       padding: 0 2px;
       border-radius: 3px;
+      border-right: 0;
       background-color: #1490e4;
-      font-weight: bold;
       color: #fff;
       vertical-align: top; }
     .header .nav .language .csj {
@@ -155,7 +170,7 @@ body a {
         margin-left: 10px; }
     .footer .office .location .val {
       font-weight: normal;
-      color: #A0A3AF; }
+      color: #666; }
       .footer .office .location .val b {
         margin-right: 5px;
         font-weight: bold;
@@ -170,12 +185,12 @@ body a {
           width: 14px;
           height: 20px;
           margin-right: 10px;
-          background: url("../images/location.png") no-repeat;
+          background: url("https://gznqx.gitee.io/nqx/assets/images/location.png") no-repeat;
           vertical-align: top; }
         .footer .office .location .map a:hover {
           color: #6bcbff; }
           .footer .office .location .map a:hover .img {
-            background: url("../images/location-blue.png") no-repeat; }
+            background: url("https://gznqx.gitee.io/nqx/assets/images/location-blue.png") no-repeat; }
   .footer .office .us,
   .footer .office .cn {
     flex: 1;
@@ -183,53 +198,20 @@ body a {
 
 .footer .concat {
   padding: 45px 20px 40px 90px;
-  background: #033 url("../images/index/footer-bg.png") no-repeat center center; }
-  .footer .concat .grid-a {
-    font-size: 32px;
-    color: #fff; }
-  .footer .concat .grid-b {
-    padding-top: 25px; }
-  .footer .concat .grid-b a {
-    display: inline-block;
-    width: 200px;
-    height: 50px;
-    padding-left: 30px;
-    border-radius: 28px;
-    vertical-align: top; }
-  .footer .concat .grid-b a {
-    margin-right: 5px; }
-  .footer .concat .grid-b .twi {
-    background-color: #55c1e7; }
-  .footer .concat .grid-b .fa {
-    background-color: #609ee9; }
-  .footer .concat .grid-b .go {
-    background-color: #ff5555; }
-  .footer .concat .grid-b span {
-    position: relative;
-    top: 5px;
-    display: inline-block;
-    width: 30px;
-    height: 30px; }
-  .footer .concat .grid-b i {
-    position: relative;
-    top: 0px;
-    left: 15px;
-    font-size: 20px;
-    color: #fff; }
-  .footer .concat .btn-group-tfg .icon-twi,
-  .footer .concat .btn-group-tfg .icon-fa,
-  .footer .concat .btn-group-tfg .icon-go {
-    text-align: center;
-    font-size: 30px;
-    color: #fff; }
+  background: #033 url("https://gznqx.gitee.io/nqx/assets/images/index/footer-bg.png") no-repeat center center;
+  font-size: 32px;
+  color: #fff; }
 
 .footer .copyright {
-  padding: 15px 20px 15px 100px;
+  padding: 15px 20px;
   line-height: 45px;
   background-color: #ebecf2; }
   .footer .copyright .col-a {
+    flex: 4;
     font-size: 20px;
     color: #95A9B1; }
+  .footer .copyright .col-b {
+    flex: 6; }
   .footer .copyright .col-b span {
     margin-right: 20px;
     font-weight: bold;
@@ -242,7 +224,7 @@ body a {
   .footer .box {
     width: 768px; }
   .footer .office {
-    padding: 24px 48px; } }
+    padding: 24px 0; } }
 
 @media (min-width: 1024px) {
   .header .box,
@@ -250,7 +232,7 @@ body a {
   .footer .box {
     width: 1024px; }
   .footer .office {
-    padding: 30px 60px; } }
+    padding: 30px 0; } }
 
 @media (min-width: 1200px) {
   .header .box,
@@ -258,13 +240,7 @@ body a {
   .footer .box {
     width: 1200px; }
   .footer .office {
-    padding: 37px 75px; } }
-
-@media (min-width: 1440px) {
-  .header .box,
-  .content .box,
-  .footer .box {
-    width: 1440px; } }
+    padding: 37px 0; } }
 
 /*表单留言*/
 .content .box {
@@ -281,7 +257,7 @@ body a {
 .content .grid-row .pic {
   max-height: 400px;
   border-radius: 4px;
-  background: url("../images/contract/a.png") no-repeat;
+  background: url("https://gznqx.gitee.io/nqx/assets/images/contract/a.png") no-repeat;
   background-size: 100% 100%; }
 
 .content .grid-row .form-cont {

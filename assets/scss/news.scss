@@ -2,12 +2,13 @@
 
 .content-news {
   .box {
-    padding-top: 200px;
-    background: #fff url('../images/product-bg.png') repeat-y;
+    padding: 200px 50px 0;
+    background: #fff url('https://gznqx.gitee.io/nqx/assets/images/product-bg.png') repeat-y;
   }
   .row {
     display: flex;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
+    background-color: #fff;
     .grid {
       flex: 1;
       .item-img {
@@ -47,13 +48,13 @@
         color: rgba(154, 168, 182, 1);
       }
       &.grid-l {
-        padding-left: 100px;
+        padding-left: 50px;
         .item-img {
           text-align: left;
         }
       }
       &.grid-r {
-        padding-right: 100px;
+        padding-right: 50px;
         .item-img {
           text-align: right;
         }
@@ -115,12 +116,12 @@
     .btn-prev {
       position: absolute;
       left: 56px;
-      top: 400px;
+      top: 300px;
     }
     .btn-next {
       position: absolute;
       right: 56px;
-      top: 400px;
+      top: 300px;
     }
   }
   .article-content {
