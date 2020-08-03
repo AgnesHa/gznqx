@@ -74,7 +74,6 @@
   .index-content .slide-top .slideBox .bd li {
     text-align: center; }
   .index-content .slide-top .slideBox .bd img {
-    width: 1200px;
     max-width: 1200px; }
   .index-content .slide-top .slideBox .bd:hover ~ .prev {
     display: block; }
@@ -145,18 +144,18 @@
       text-align: center; }
       .index-content .slide-top .item-a .btn-group a {
         display: inline-block;
-        width: 250px;
-        height: 70px;
+        width: 200px;
+        height: 60px;
         margin-bottom: 20px;
-        border-radius: 35px;
+        border-radius: 30px;
         border: 3px solid rgba(9, 192, 239, 0.6);
         background-color: #6bcbff;
-        line-height: 63px;
-        font-size: 25px;
+        line-height: 50px;
+        font-size: 20px;
         color: #fff; }
       .index-content .slide-top .item-a .btn-group img {
-        width: 37px;
-        height: 37px;
+        width: 30px;
+        height: 30px;
         margin-right: 5px; }
   .index-content .grid-row {
     margin-top: 50px;
@@ -166,21 +165,40 @@
       z-index: 100;
       padding: 0 50px; }
     .index-content .grid-row h2 {
-      font-size: 100px;
+      font-size: 50px;
       color: #4E4E4E; }
+    .index-content .grid-row h3 {
+      margin-top: 15px;
+      font-size: 50px; }
   .index-content .mask {
     margin-top: 50px; }
     .index-content .mask .current {
       display: flex; }
+      .index-content .mask .current.kn-95 {
+        margin-bottom: 30px; }
+        .index-content .mask .current.kn-95 .params .item:nth-child(1) span {
+          background-color: #d80118; }
+        .index-content .mask .current.kn-95 .params .item:nth-child(2) span {
+          background-color: #6c1114; }
+        .index-content .mask .current.kn-95 .params .item:nth-child(3) span {
+          background-color: #484544; }
+      .index-content .mask .current.flat-mask .params .item:nth-child(1) span {
+        background-color: #263372; }
+      .index-content .mask .current.flat-mask .params .item:nth-child(2) span {
+        background-color: #0071b6; }
+      .index-content .mask .current.flat-mask .params .item:nth-child(3) span {
+        background-color: #bbbcc3; }
     .index-content .mask .l-part {
-      flex: 1; }
+      flex: 2; }
       .index-content .mask .l-part .params {
         padding-left: 50px; }
         .index-content .mask .l-part .params span {
           position: relative;
           top: 2px;
+          display: inline-block;
           width: 16px;
           height: 16px;
+          margin-right: 10px;
           border-radius: 8px; }
       .index-content .mask .l-part .item {
         font-size: 18px; }
@@ -211,7 +229,7 @@
     .index-content .mask .small-img {
       flex: 1;
       display: inline-block;
-      margin-left: 10px;
+      margin-left: 15px;
       vertical-align: top; }
       .index-content .mask .small-img .list {
         text-align: center; }
@@ -221,8 +239,7 @@
           display: none; }
       .index-content .mask .small-img img {
         width: 100%;
-        margin-bottom: 10px;
-        border: 1px solid #efefef;
+        margin-bottom: 15px;
         vertical-align: top; }
     .index-content .mask .btn-group {
       text-align: left; }
@@ -296,7 +313,11 @@
   height: 24rem; }
 
 .backdrop-slider .wrapper.horizontal .cards-list .img {
-  height: 12rem; }
+  height: 12rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  background-size: contain; }
 
 .backdrop-slider .wrapper.vertical .cards-list {
   display: flex;

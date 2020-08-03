@@ -17,19 +17,10 @@ function openImg(imgSrc) {
   var imgObj = new Image()
   imgObj.src = imgSrc
   imgObj.onload = function() {
-    var ratio = imgObj.height / imgObj.width
-    var imgH = imgObj.height>0?imgObj.height:850
+    var imgH = imgObj.height
     var imgW = imgObj.width
-    if(imgH>windowH) {
-      imgH = windowH - 100
-      imgW = imgH / ratio
-    }
-    if(imgH>imgW) {
-      imgW = imgH / ratio
-    } else {
-      imgW = imgH * ratio
-    }
-    var mt = (windowH - imgH)/2
+    var mt = (windowH - imgH) / 2
+
     $(".img-bg").css({"margin-top": mt, "width": imgW}).append("<img src='"+imgSrc+"' style='width:"+ imgW + "px; height:"+ imgH + "px;'/>")
     $(".img-mask-fake").show()
     $(".img-mask").show().css({"margin-left": - imgW/2})

@@ -46,11 +46,8 @@
 })();
 
 (function($){
-  $(".factory .pic-show img").on("click", function() {
-    openImg($(this).attr("src"))
-  })
-  $(".backdrop-slider .cards-list a").on("click", function() {
-    openImg($(this).find("img").attr("src"))
+  $(".backdrop-slider .cards-list").on("click", function() {
+    openImg($(this).find(".img").data("src"))
   })
   closeImg()
 
